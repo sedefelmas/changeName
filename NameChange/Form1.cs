@@ -72,9 +72,9 @@ namespace NameChange
                         sw.WriteLine(finalText);
                         sw.Close();
                         MessageBox.Show("İşlem tamamlandı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        textBox1.Text = "";
-                        textBox2.Text = "";
-                        textBox3.Text = "";
+                        //textBox1.Text = "";
+                        //textBox2.Text = "";
+                        //textBox3.Text = "";
                     }
                     else
                     {
@@ -86,11 +86,11 @@ namespace NameChange
                 }
                 else
                 {
-                    if (textBox1.Text == "")
-                    {
+                    //if (textBox1.Text == "")
+                    //{
                         MessageBox.Show("Excel dosyasını seçmediniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         break;
-                    }
+                    //}
                 }
             }
             while (stop == false);
